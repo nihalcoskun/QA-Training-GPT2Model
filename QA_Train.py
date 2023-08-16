@@ -43,9 +43,9 @@ def read_documents_from_directory(directory):
     return combined_text
 
 # Read documents from the directory
-train_directory = '/Users/nihalcoskun/Desktop/CSE/Staj 2/Bittensor_relative_QA'
+train_directory = '/Users/nihalcoskun/Desktop/CSE/Staj 2/Bittensor_relative_QA/dataset'
 text_data = read_documents_from_directory(train_directory)
-text_data = re.sub(r'\n+', '\n', text_data).strip()  # Remove excess newline characters
+#text_data = re.sub(r'\n+', '\n', text_data).strip()  # Remove excess newline characters
 
 with open("/Users/nihalcoskun/Desktop/CSE/Staj 2/Bittensor_relative_QA/trainingdataset.text", "w") as f:
     f.write(text_data)
